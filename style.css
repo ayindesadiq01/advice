@@ -1,0 +1,97 @@
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+body {
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ width: 100%;
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ background: hsl(218, 23%, 16%);
+}
+
+.container {
+ color: white;
+ height: 70vh;
+ width: 95%;
+ background: hsl(217, 19%, 24%);
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ padding: 3.5em 2.5em;
+ border-radius: 5px;
+ position: relative;
+ box-shadow: 0px 0px 30px rgba(0, 0, 0, .3);
+}
+
+.advice-title {
+ color: hsl(150, 100%, 66%);
+ letter-spacing: 2px;
+ font-weight: 500;
+ font-size: 1.2rem;
+}
+
+.advice-text {
+ font-size: 1.3rem;
+ margin: 1em 0;
+ font-weight: 500;
+}
+
+.divider-line {
+ position: relative;
+ top: 30px;
+}
+
+.btn {
+ border: none;
+ padding: 1em;
+ border-radius: 50%;
+ position: absolute;
+ bottom: -20px;
+ background: hsl(150, 100%, 66%);
+}
+
+.dice-icon {
+ width: 1.5em;
+ display:  flex;
+ justify-content: center;
+ align-items: center;
+}
+
+@media (min-width: 500px) {
+ .advice-text {
+  padding: 1em;
+ }
+}
+
+@media (min-width: 700px) {
+ .container {
+  width: 85%;
+ }
+ .advice-text {
+  padding: 2em;
+ }
+ .divider-line {
+  top: 0px;
+ }
+}
+
+@media (min-width: 900px) {
+ .container {
+  width: 60%;
+ }
+
+ .advice-text {
+  padding: 2em;
+ }
+
+ .divider-line {
+  top: 0px;
+ }
+}
