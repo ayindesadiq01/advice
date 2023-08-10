@@ -58,8 +58,7 @@ const quotes = [
 document.querySelector('.btn').addEventListener('click', () => {
 
  
- const ranQuotes = Math.trunc(Math.random() * quotes.length + 1);
-
+ const ranQuotes = Math.trunc(Math.random() * quotes.length + 1)
 
  adviceTitle.textContent = `ADVICE - #${ranQuotes}`;
  adviceQuotes.textContent = quotes[ranQuotes];
