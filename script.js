@@ -72,6 +72,7 @@ const container = document.querySelector('.container')
 toggleWhite.addEventListener('click', function(){
   this.classList.toggle('hidden');
   toggleDark.classList.toggle('hidden')
+  toggleWhite.style.transition = '.5s';
 
   // Working with Background Body
   body.style.background = 'hsl(218, 23%, 16%)'
@@ -91,6 +92,7 @@ toggleWhite.addEventListener('click', function(){
 toggleDark.addEventListener('click', function(){
   this.classList.toggle('hidden');
   toggleWhite.classList.toggle('hidden')
+  toggleDark.style.transition = '.5s';
 
   // Working with Background Body
   body.style.background = 'white'

@@ -19,18 +19,21 @@ body {
 .bg-color {
  position: absolute;
  top: 15%;
+ left: 95%;
+ transform: translate(-50%);
+ width: 100%;
  margin-bottom: 2em;
  display: flex;
 }
 
 .toggle-dark {
- width: 100%;
- height: 20px;
+ width: 6%;
  position: absolute;
 }
 
 .toggle-white {
  margin-bottom: 1em;
+ width: 6%;
 }
 
 .hidden {
