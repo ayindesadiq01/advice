@@ -56,10 +56,52 @@ const quotes = [
 
 
 document.querySelector('.btn').addEventListener('click', () => {
-
- 
  const ranQuotes = Math.trunc(Math.random() * quotes.length + 1)
 
  adviceTitle.textContent = `ADVICE - #${ranQuotes}`;
  adviceQuotes.textContent = quotes[ranQuotes];
 })
+
+
+// DARK AND WHITE MODE IN PRACTICE
+const toggleWhite = document.querySelector('.toggle-white');
+const toggleDark= document.querySelector('.toggle-dark');
+const body = document.querySelector('body');
+const container = document.querySelector('.container')
+
+toggleWhite.addEventListener('click', function(){
+  this.classList.toggle('hidden');
+  toggleDark.classList.toggle('hidden')
+
+  // Working with Background Body
+  body.style.background = 'hsl(218, 23%, 16%)'
+  body.style.transition = '2s';
+
+  // Working with Container BG
+  container.style.background = "white";
+  container.style.color = 'hsl(218, 23%, 16%)'
+  container.style.transition = '2s';
+
+  // Working with Title Heading
+  adviceTitle.style.color = "black"
+  adviceTitle.style.transition = '2s';
+});
+
+
+toggleDark.addEventListener('click', function(){
+  this.classList.toggle('hidden');
+  toggleWhite.classList.toggle('hidden')
+
+  // Working with Background Body
+  body.style.background = 'white'
+  body.style.transition = '2s';
+
+  // Working with Container BG
+  container.style.background = 'hsl(218, 23%, 16%)'
+  container.style.color = 'white';
+  container.style.transition = '2s';
+
+  // Working with Title Heading
+  adviceTitle.style.color = "white";
+  adviceTitle.style.transition = '2s';
+});
