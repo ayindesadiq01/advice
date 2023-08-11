@@ -17,9 +17,6 @@ body {
 }
 
 .bg-color {
- /* position: absolute;
- top: 15%;
- left: 95%; */
  position: relative;
  left: 145px;
  transform: translate(-50%);
@@ -98,6 +95,10 @@ body {
   padding: 1em;
  }
 
+ .bg-color {
+  left: 175px;
+ }
+
  .container {
   height: 50vh;
  }
@@ -111,17 +112,28 @@ body {
  .container {
   width: 85%;
  }
+
  .advice-text {
   padding: 2em;
  }
+
  .divider-line {
   top: 0px;
+ }
+
+ .bg-color {
+  left: 250px;
  }
 }
 
 @media (min-width: 900px) {
  .container {
   width: 60%;
+  height: 65%;
+ }
+
+ .bg-color {
+  left: 330px;
  }
 
  .advice-text {
@@ -129,9 +141,14 @@ body {
  }
 
  .divider-line {
-  top: 0px;
+  top: -15px;
+ }
+ 
+ .btn {
+  bottom: -20px;
  }
 }
+
 
 @media (min-width: 1000px) {
  .bg-color {
@@ -151,4 +168,5 @@ body {
  .divider-line {
   top: -30px;
  }
+
 }
