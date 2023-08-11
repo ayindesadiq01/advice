@@ -17,23 +17,26 @@ body {
 }
 
 .bg-color {
- position: absolute;
+ /* position: absolute;
  top: 15%;
- left: 95%;
+ left: 95%; */
+ position: relative;
+ left: 145px;
  transform: translate(-50%);
- width: 100%;
+ width: 40%;
  margin-bottom: 2em;
  display: flex;
+ z-index: 100;
 }
 
 .toggle-dark {
- width: 6%;
+ width: 15%;
  position: absolute;
 }
 
 .toggle-white {
  margin-bottom: 1em;
- width: 6%;
+ width: 15%;
 }
 
 .hidden {
@@ -127,5 +130,25 @@ body {
 
  .divider-line {
   top: 0px;
+ }
+}
+
+@media (min-width: 1000px) {
+ .bg-color {
+  top: 6%;
+  left: 97%;
+ }
+
+ .toggle-dark, .toggle-white {
+  width: 4%;
+ }
+
+ .container {
+  width: 50%;
+  height: 65%;
+ }
+
+ .divider-line {
+  top: -30px;
  }
 }
